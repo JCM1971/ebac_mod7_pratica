@@ -1,50 +1,25 @@
-<!--Na atividade prática deste módulo, você irá praticar todos os conceitos aprendidos. 
-Se você tiver dúvidas, retome o passo a passo nas aulas.
-
-1) Estrutura do HTML:
-Crie um formulário HTML que possua dois campos numéricos:
-campo A
-campo B
--->
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validação de Formulário</title>
-    <style>
-        body {
-            font-family: arial, sans-serif;
-            margin: 20 px;
-        }
-        .mensagem {
-            margin-top: 10px;
-            font-weight: bold;
-        }
-        .positivo {
-            color: green;
-        }
-        .negativo {
-            color: red;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Validação de Números</h1>
-    <form id="formulário">
+    <form id="formulario">
         <label for="campoA">Campo A:</label>
         <input type="number" id="campoA" name="campoA" required><br><br>
-        
+
         <label for="campoB">Campo B:</label>
         <input type="number" id="campoB" name="campoB" required><br><br>
-        
+
         <button type="submit">Submeter</button>
     </form>
 
     <p id="mensagem" class="mensagem"></p>
 
-    <script src="script.js"></script> <!-- Inserir o arquivo JavaScript aqui -->
-    
+    <script src="script.js"></script>
 </body>
 </html>
