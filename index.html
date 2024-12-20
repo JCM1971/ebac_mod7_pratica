@@ -44,46 +44,7 @@ campo B
 
     <p id="mensagem" class="mensagem"></p>
 
-    <script>
-        // Captura o evento de submissão do formulário
-        document.getElementById('formulário').addEventListener('submit', function(event) {
-            event.preventDefault(); //Impede o envio do formulário
-
-            // Obtém os valores dos campos A e B
-            const campoA = document.getElementById('campoA').value;
-            const campoB = document.getElementById('campoB').value;
-
-            // Elemento para exibir a mensagem
-            const mensagem = document.getElementById('mensagem');
-
-            //Limpa mensagens anteriores
-            mensagem.textContent = "";
-
-            // Verifica se os campos possuem valores válidos
-            if(campoA === ""|| campoB === "") {
-                mensagem.textContent = "Preencha ambos os campos.";
-                mesnagem.className = "mensagem negativo";
-                return;
-            }
-
-            const numeroA = parseFloat(campoA);
-            const numeroB = parseFloat(campoB);
-
-            if (isNaN(numeroA) || isNaN(numeroB)) {
-                mensagem.textContent = "Preencha ambos os campos com números válidos.";
-                mensagem.className = "mensagem negativo";
-                return;
-            }
-
-            // validação
-            if(numeroB > numeroA) {
-                mensagem.textContent = "Formulário válido! O número B é maior que o número A.";
-                mensagem.className = "mensagem positivo";
-            } else {
-                mesagem.textContent = "Formulário inválido! O número B deve ser maior que o número A.";
-                mensagem.className = "mensagem negativo";
-            }
-        });
-  </script>    
+    <script src="script.js"></script> <!-- Inserir o arquivo JavaScript aqui -->
+    
 </body>
 </html>
